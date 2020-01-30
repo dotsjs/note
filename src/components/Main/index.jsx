@@ -53,7 +53,7 @@ export default function Main({ editing, setEditing }) {
     setSelected(index);
   };
   return (
-    <div>
+    <main>
       <List notes={notes} selectNote={selectNote} deleteNote={deleteNote} />
       {editing ? (
         <Edit
@@ -71,6 +71,6 @@ export default function Main({ editing, setEditing }) {
           setModifying={setModifying}
         />
       )}
-    </div>
+    </main>
   );
 }

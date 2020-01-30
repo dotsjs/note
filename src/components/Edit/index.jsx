@@ -23,6 +23,7 @@ export default function Edit({
   return (
     <form onSubmit={submitHandler}>
       <input
+        autoFocus
         type="text"
         placeholder="제목"
         value={title}

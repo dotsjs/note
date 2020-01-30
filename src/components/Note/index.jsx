@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Note({ note, setEditing, setModifying }) {
   return (
-    <div>
+    <article>
       <h2>{note.title}</h2>
       <p>{note.content}</p>
       <button
@@ -13,6 +13,6 @@ export default function Note({ note, setEditing, setModifying }) {
       >
         수정
       </button>
-    </div>
+    </article>
   );
 }
